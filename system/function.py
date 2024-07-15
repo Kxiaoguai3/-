@@ -30,7 +30,7 @@ def Add_Student():
     age = input("请输入学生年龄：")
     grade = input("请输入学生年级：")
     Class = input("请输入学生班级：")
-    grades = input("请输入学生成绩")
+    grades = input("请输入学生成绩：")
     tmp = File_Manager(name, age, grade, Class, grades)
     tmp.Input()
     print(f"{name} 已添加成功")
@@ -67,7 +67,7 @@ def Modify_Student():
     with open(DATA, 'r') as file:
         liens = file.readlines()
     
-    name = input('请输入你要修改学生的姓名')
+    name = input('请输入你要修改学生的姓名：')
     new_lines = []
 
     for line in liens:
@@ -102,7 +102,6 @@ def Modify_Student():
 
 
                 new_lines.append(', '.join(fields) + '\n')
-                print(f'{name}的信息修改成功')
 
             else:
                 new_lines.append(line)
