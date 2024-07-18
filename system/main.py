@@ -12,12 +12,8 @@ while True:
     elif choose == 2:
         function.Delete_Student()
 
-    #修改信息有问题！！！
+    #修改
     elif choose == 3:
-        '''有以下问题:
-                1.修改一个人信息后，其他人的信息会被删掉
-                2.会在txt文件中后面多两个回车
-        '''
         print("该功能异常，请谨慎使用")
         function.Modify_Student()
 
